@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>applying javascript(internal and external)</title>
+</head>
+<h1>applying javascript(internal and external)</h1>
+<h2>
+Internal JavaScript:</h2>
+<p>
+JavaScript can be added directly to the HTML file by writing the code 
+inside the &lt;script&gt; tag . We can place the &lt;script&gt; tag either inside 
+&lt;head&gt; or the &lt;body&gt; tag according to the need.</p>
+<p>&lt;html&gt;<br>
+&lt;head&gt;<br>
+&lt;title&gt;Internal JavaScript&lt;/title&gt;<br>
+&lt;script type="text/javascript"&gt;<br>
+ document.write("This is Internal Javascript Example.!!!");<br>
+&lt;/script&gt;<br>
+&lt;/head&gt;<br>
+&lt;body&gt;<br>
+&lt;/body&gt;<br>
+&lt;/html&gt;<br></p><p>
+<h3>Output:</h3> This is Internal Javascript Example.!!!<br></p>
+<h2>External Javascript:</h2><p>
+The other way is to write JavaScript code in another file having a .js 
+extension and then link the file inside the &lt;head> or &lt;body> tag of the 
+HTML file in which we want to add this code.</p>
+<p>HTML Code:</p>
+<p>
+&lt;!DOCTYPE html&gt;<br>
+&lt;html&gt;<br>
+&lt;head&gt;<br>
+&lt;title&gt;External JavaScript&lt;/title&gt;<br>
+&lt;style&gt;<br>
+h2 {<br>
+box-sizing: border-box;<br>
+width: 250px;<br>
+height: 150px;<br>
+background-color: green;<br>
+color: white;<br>
+margin: auto;<br>
+font-size: 15px;<br>
+font-family: sans-serif;<br>
+text-align: center;<br>
+COMPUTER SCIENCE & ENGINEERING SKILL ORIENTED LAB - II<br>
+padding: 20px;<br>
+}<br>
+&lt;/style&gt;<br>
+&lt;/head&gt;<br>
+&lt;body&gt;<br>
+&lt;h2 class="external"&gt;<br>BVC College of engineering&lt;/h2&gt;<br>
+&lt;script src="BVC.js"&gt;<br>&lt;/script&gt;<br>
+&lt;/body&gt;<br>
+&lt;/html&gt;<br>
+JS Code:<br>
+let h2 = document.querySelector(".external");<br>
+h2.addEventListener("mouseenter", function (e) {<br>
+ h2.innerText = "Hi STUDENTS, Welcome to BVC";});<br>
+<h3>Output:<h3>
+Bvc College of Enginnering<br>
+Hi STUDENTS, Welcome to BVC</p>
+</html>
