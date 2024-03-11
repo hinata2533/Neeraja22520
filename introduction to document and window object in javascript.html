@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>introduction to document and window object in javascript</title>
+</head>
+<h1>introduction to document and window object in  javascript</h1>
+<h2>Window Object</h2>
+<p>The window object represents a window in browser. An object of window 
+is created automatically by the browser.</p><p>
+Window is the object of browser, it is not the object of javascript. The 
+javascript objects are string, array, date etc.</p><p>
+Methods of window object</p><p>
+The important methods of window object are as follows:</p>
+
+<p><h3>Method Description</h3>
+alert()--- displays the alert box containing 
+message with ok button.<br>
+confirm()--- displays the confirm dialog box 
+containing message with ok and 
+cancel button.<br>
+prompt()--- displays a dialog box to get input 
+from the user.<br>
+open()---opens the new window.<br>
+close()--- closes the current window.<br>
+setTimeout()--- performs action after specified time 
+like calling function, evaluating 
+expressions etc.<br>
+<h2>Alert Box :</h2>
+- An alert box is often used if we want to make sure information 
+comes through to the user.<br>
+- When an alert box pops up, the user will have to click "OK" to 
+proceed. <br>
+<h3>Syntax: alert("sometext");</h3>
+<h3>Program1:</h3>
+&lt;html&gt;<br>
+&lt;head&gt;<br>
+&lt;script type="text/javascript"&gt;<br>
+function disp_alert()<br>
+{<br>
+alert("I am an alert box!!");<br>
+}<br>
+&lt;/script&gt;<br>
+&lt;/head&gt;<br>
+&lt;body&gt;<br>
+&lt;input type="button" onclick="disp_alert()" value="Display 
+alert box" /&gt;<br>
+&lt;/body&gt;<br>
+&lt;/html&gt;<br>
+
+<h2>2. Confirm Box :</h2>
+- A confirm box is often used if we want the user to verify or accept 
+something.<br>
+Note : When a confirm box pops up, the user will have to click either 
+"OK" or "Cancel" to proceed. <br>
+If the user clicks <br>
+"OK“  the box returns true. <br>
+"Cancel“  the box returns false.<br>
+<h2>Syntax: confirm("sometext");</h2>
+<h3>Program : </h3>
+&lt;html&gt;<br>
+&lt;head&gt;<br>
+&lt;script type="text/javascript">
+function disp_confirm()<br>
+{<br>
+var r=confirm("Press a button");<br>
+if (r==true)<br>
+{<br>
+document.writeln("You pressed OK!");<br>
+}<br>
+else<br>
+{<br>
+document.writeln("You pressed Cancel!");<br>
+}<br>
+}<br>
+&lt;/script&gt;<br>
+&lt;/head&gt;<br>
+&lt;body&gt;<br>
+&lt;input type="button" onclick="disp_confirm()" value="Display a confirm 
+box" /&gt;<br>
+&lt;/body&gt;<br>
+&lt;/html&gt;<br>
+
+
+<h2>3. Prompt Box :</h2>
+- A prompt box is often used if we want the user to input a value 
+before entering a page.<br>
+Note : When a prompt box pops up, the user will have to click either 
+"OK" or "Cancel" to proceed after entering an input value.<br> 
+If the user clicks <br>
+"OK"  the box returns the input value. <br>
+"Cancel"  the box returns null.<br>
+<h3>Syntax: prompt("sometext","defaultvalue");</h3>
+<h3>Program :</h3>
+&lt;html&gt;<br>
+&lt;head&gt;<br>
+&lt;script type="text/javascript"&gt;<br>
+function disp_prompt()<br>
+{<br>
+var name=prompt("Please enter your name","Harry Potter");<br>
+if (name!=null && name!="")<br>
+{<br>
+document.writeln("Hello " + name + "! How are you today?");<br>
+}<br>
+}<br>
+&lt;/script&gt;<br>
+&lt;/head&gt;<br>
+&lt;body&gt;<br>
+&lt;input type="button" onclick="disp_prompt()" value="Display a 
+prompt box" /&gt;<br>
+&lt;/body&gt;<br>
+&lt;/html&gt;<br></p>
