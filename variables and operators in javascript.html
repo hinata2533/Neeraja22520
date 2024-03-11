@@ -1,0 +1,131 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+  <title>variables and operators in javascript</title>
+</head>
+<h1>variables and operators in javascript</h1>
+<h2>JavaScript Variables:</h2> <p>A JavaScript variable is the simple name of 
+storage location where data to be stored. There are two types of 
+variables in JavaScript which are listed below:</p><p>
+ Local variables: Declare a variable inside of block or function.<br>
+ Global variables: Declare a variable outside function or with a 
+window object.<br>
+// Variable declaration<br>
+var c, d, e;<br>
+// Assign value to the variable<br>
+c = 5; <br>
+// Computer value of variables<br>
+d = c;<br>
+e = c/d;<br>
+<h3>Example:</h3>
+&lt;script&gt;<br>
+// Declare a variable and initialize it<br>
+// Gloabal variable declaration<br>
+var Name="Apple";<br>
+// Function definition<br>
+function MyFunction() {<br>
+// Local variable declaration<br>
+var num = 45;<br>
+// Display the value of Gloabal variable<br>
+document.writeln(Name);<br>
+// Display the value of local variable<br>
+document.writeln("<br>" + num );<br>
+}<br>
+// Function call<br>
+MyFunction();<br>
+&lt;/script&gt;<br>
+<h3>OutPut:</h3>
+Apple<br>
+45<br>
+<h2>Operators:</h2>
+JavaScript operators are symbols that are used to perform operations on 
+operands.<br>
+
+<h3>For example:</h3>
+var sum=10+20;<br> 
+Here, + is the arithmetic operator and = is the assignment operator.<br>
+There are following types of operators in JavaScript.<br><p>
+1. Arithmetic Operators<br>
+2. Comparison (Relational) Operators<br>
+3. Bitwise Operators<br>
+4. Logical Operators<br>
+5. Assignment Operators<br>
+6. Special Operators<br></p>
+<h2>1. JavaScript Arithmetic Operators</h2>
+Arithmetic operators are used to perform arithmetic operations on the 
+operands. The following operators are known as JavaScript arithmetic 
+operators.<br>
+Operator Description Example<br>
++ Addition---- 10+20 = 30<br>
+- Subtraction---- 20-10 = 10<br>
+* Multiplication---- 10*20 = 200<br>
+/ Division---- 20/10 = 2<br>
+% Modulus (Remainder)---- 20%10 = 0<br>
+++ Increment---- var a=10; a++; Now a = 11<br>
+-- Decrement ----var a=10; a--; Now a = 9<br>
+<h2>2. JavaScript Comparison Operators</h2>
+The JavaScript comparison operator compares the two operands. The 
+comparison operators are as follows:<br>
+Operator Description Example<br>
+== Is equal to 10==20 = false<br>
+=== Identical (equal and of same type) 10==20 = false<br>
+!= Not equal to 10!=20 = true<br>
+!== Not Identical 20!==20 = false<br>
+> Greater than 20>10 = true<br>
+>= Greater than or equal to 20>=10 = true<br>
+< Less than 20<10 = false<br>
+<= Less than or equal to 20<=10 = false<br>
+<h2>3. JavaScript Bitwise Operators</h2>
+The bitwise operators perform bitwise operations on operands. The 
+bitwise operators are as follows:<br>
+Operator Description Example<br>
+& Bitwise AND (10==20 & 20==33) = false<br>
+| Bitwise OR (10==20 | 20==33) = false<br>
+^ Bitwise XOR (10==20 ^ 20==33) = false<br>
+~ Bitwise NOT (~10) = -10<br>
+<< Bitwise Left <br>
+Shift<br>
+(10<<2) = 40<br>
+>> Bitwise Right<br> 
+Shift<br>
+(10>>2) = 2<br>
+>>> Bitwise Right<br> 
+Shift with Zero<br>
+(10>>>2) = 2<br>
+<h2>4. JavaScript Logical Operators</h2>
+The following operators are known as JavaScript logical operators.<br>
+Operator Description Example<br>
+&& Logical AND (10==20 && 20==33) = false<br>
+|| Logical OR (10==20 || 20==33) = false<br>
+! Logical Not !(10==20) = true<br>
+<h2>5. JavaScript Assignment Operators</h2>
+The following operators are known as JavaScript assignment operators.<br>
+Operator Description Example<br>
+= Assign 10+10 = 20<br>
++= Add and assign var a=10; a+=20; Now <br>
+a = 30<br>
+-= Subtract and assign var a=20; a-=10; Now <br>
+a = 10<br>
+*= Multiply and assign var a=10; a*=20; Now <br>
+a = 200<br>
+/= Divide and assign var a=10; a/=2; Now <br>
+a = 5<br>
+%= Modulus and assign var a=10; a%=2; Now<br>
+a = 0<br>
+<h2>6. JavaScript Special Operators</h2>
+The following operators are known as JavaScript special operators.<br>
+Operator Description<br>
+(?:) Conditional Operator----- returns value based on the 
+condition. It is like if-else.<br>
+, -----Comma Operator allows multiple expressions to be 
+evaluated as single statement.<br>
+delete----- Delete Operator deletes a property from the object.
+In ------In Operator checks if object has the given property<br>
+instanceof------ checks if the object is an instance of given type<br>
+new ----creates an instance (object)<br>
+typeof -----checks the type of object.<br>
+void---- it discards the expression's return value.<br>
+yield---- checks what is returned in a generator by thegenerator's iterator.<br></p>
+</html>
+
